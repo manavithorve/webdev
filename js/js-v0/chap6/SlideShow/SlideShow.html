@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>SlideShow</title>
+<script>
+Picture=new Array('cat.jpg','dog.jpg','cartoon.jpg')
+currentPicture=0
+function RunSlideShow(ForwardBack)
+{
+	if(document.images)
+	{
+		currentPicture=currentPicture+ForwardBack
+		if(currentPicture>(Picture.length-1))
+		{
+			currentPicture=0
+		}
+		if(currentPicture<0)
+		{
+			currentPicture=Picture.length-1
+		}
+		document.PictureDisplay.src=Picture[currentPicture]
+	}	
+}
+</script>
+</head>
+<body>
+</body>
+	<center>
+	<img src='cat.jpg' name='PictureDisplay' width=200 height=200/>
+	<br><input type="button" value="Back" onclick="RunSlideShow(-1)"/>&nbsp&nbsp&nbsp&nbsp
+	<input type="button" value="Next" onclick="RunSlideShow(1)"/><br>
+	</center>
+</html>

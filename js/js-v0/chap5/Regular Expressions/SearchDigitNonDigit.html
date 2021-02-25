@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Matching Digits and NonDigits</title>
+<script language="javascript" type="text/javascript">
+function SearchNonDigit()
+{
+	with(document.forms.form1)
+	{
+		var num=phNo.value
+		var re=/\D/
+		if(re.test(num))
+		{
+			alert('Non Digit Found ')
+		}
+		else
+		{
+			alert('NonDigit not found')
+		}
+	}
+}
+function SearchDigit(namev)
+{
+	var name=namev
+	var re=/\d/
+	if(re.test(name))
+	{
+		alert('Invalid Name , This name Contains Digits..')
+	}
+	else
+	{
+		alert('Welcome '+name)
+	}
+}
+</script>
+</head>
+<body>
+<br>
+<form name="form1">
+First Name  <input type="text" name="fname" onblur="SearchDigit(this.value)"/>
+Ph. Number <input type="text" name="phNo"/><br>
+<input type="button" name="button" value="Click" onclick="SearchNonDigit()"><br>
+</form>
+</body>
+</html>

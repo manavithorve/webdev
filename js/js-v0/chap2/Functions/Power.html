@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Parametric Function</title>
+<script>
+function Power(base,index)
+{
+	var pow=1
+	for(var i=1;i<=index;i++)
+	{
+		pow=pow*base
+	}
+	alert("Power is "+pow)
+}
+</script>
+</head>
+<body>
+<script>
+	var b=prompt('Enter the base for Power ',' ')
+	var idx=prompt('Enter the Index of the Power ',' ')
+	Power(b,idx)
+</script>
+</body>
+</html>

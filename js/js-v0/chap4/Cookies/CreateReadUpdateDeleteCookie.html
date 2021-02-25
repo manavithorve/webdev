@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Create Update Read Delete Cookie</title>
+<script>
+function CreateCookie()
+{
+	with(document.forms.f1)
+	{	
+		document.cookie="Customer name ="+cname.value+";"
+		alert("Cookie Written "+document.cookie)
+	}
+}
+function ReadCookie()
+{
+	with(document.forms.f1)
+	{	
+		alert(document.cookie)
+		if(document.cookie)
+		{
+		cookiecontent.value=document.cookie.split('=')[1]
+		}
+		else
+		{
+			cookiecontent.value="No Cookies"
+		}
+	}
+}
+function UpdateCookie()
+{
+	with(document.forms.f1)
+	{	
+		var expiryDate=new Date();
+		expiryDate.setMonth(expiryDate.getMonth()+3);
+		alert("Cookie expires on "+expiryDate.toGMTString())
+	}
+}
+function DeleteCookie()
+{
+	with(document.forms.f1)
+	{	
+		var expiryDate=new Date();
+		expiryDate.setDate(expiryDate.getDate()-1);
+		alert("Cookie Deleted")
+	}
+}
+</script>
+<body>
+<form name="f1">
+Enter Name<input type="text" name="cname" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" name="button" value="Create Cookie" onclick="CreateCookie()"><br><br>
+<input type="button" name="button" value="Get Cookies" onclick="ReadCookie()"/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Cookie Content <input type="text" name="cookiecontent" readonly="true" /><br><br>
+<input type="button" name="button" value="Update Cookie" onclick="UpdateCookie()"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" name="button" value="Delete Cookie" onclick="DeleteCookie()">
+</form>
+</body>
+</head>
+</html>

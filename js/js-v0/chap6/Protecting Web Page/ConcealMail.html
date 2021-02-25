@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Conceal Email</title>
+<script language="Javascript" type="text/javascript">
+function Mail()
+{
+	var m='Manavi&gmail*c_o_m'
+	var x='mai'
+	var y='lto'
+	var s='Subject=Customer Inquiry'
+	m=m.replace('&','@')
+	m=m.replace('*','.')
+	m=m.replace('_','')
+	m=m.replace('_','')
+	var b=x+y+':'+m+' '+s
+	document.write(b);
+	window.location=b
+}
+</script>
+</head>
+<body>
+<br>
+<input type="button" value="Help" onclick="Mail()"/>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+<title>Volume of Sphere</title>
+<script language="javascript" type="text/javascript">
+function Calculate()
+{
+with(document.forms.sphere)
+{
+	var rd=parseFloat(r.value)
+	var ans=(4*3.14*(rd*rd*rd))/3
+	vol.value=ans
+}
+}
+</script>
+</head>
+<body>
+<form name="sphere" method="post">
+<p>
+Enter the Radius : <input type="text" name="r" /><br>
+Volume :<input type="text" name="vol"/><br>
+<input type="button" name="button" value="Result" onclick="Calculate()"/><br>
+</p>
+</form>
+</body>
+</html>
+-----use 'button' as input type for getting result in textbox

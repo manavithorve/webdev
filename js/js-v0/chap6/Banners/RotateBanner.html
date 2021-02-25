@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Rotate Banner</title>
+<script>
+	Banner= new Array('cat.jpg','dog.jpg','cartoon.jpg')
+	currentBanner=0
+	function DisplayBanner()
+	{
+		if(document.images)
+		{
+			currentBanner++
+			if(currentBanner==Banner.length)
+			{
+				currentBanner=0			
+			}
+			document.RotateBanner.src=Banner[currentBanner]
+			setTimeout("DisplayBanner()",1000)
+		}
+	}
+</script>
+</head>
+<body onload="DisplayBanner()">
+<center>
+<img src='cat.jpg' height="500" width="500" name="RotateBanner">
+</center>
+</body> 
+</html>

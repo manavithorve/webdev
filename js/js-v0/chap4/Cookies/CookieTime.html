@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<title>DeleteCookie</title>
+<script language="javascript" type="text/javascript">
+function DeleteCookie()
+{
+	with(document.forms.DeleteCookie1)
+	{	
+		document.cookie="Name="+cname.value+";"
+		if(document.cookie != "")
+		{
+			var Today=new Date
+			var cookiePrevVisit=document.cookie.split('=')
+			var previousVisit=new Date(cookiePrevVisit)
+			if(Today.getTime() > previousVisit.getTime())
+			{
+				alert('Welcome to Cookies')
+			}
+			else
+			{
+				alert('Nothing to show ')
+			}
+		}
+		else
+		{
+			alert('No Cookies')
+		}
+	}
+}
+</script>
+<body>
+<form name="DeleteCookie1" method="post">
+Enter Name: <input type="text" name="cname" /><br>
+<input type="button" name="button" value="Click" onclick="DeleteCookie()"/>
+</form>
+</body>
+</html>

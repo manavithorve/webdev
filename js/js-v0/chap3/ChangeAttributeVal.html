@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Change Attribute Values Dynamically</title> 
+<script>
+function Highlight(element)
+{
+	with(document.forms.f1)
+	{	
+		if(element.value=="Click")
+		{
+			element.style.color="black"
+			element.style.backgroundColor="grey"
+		}
+		else
+		{
+		element.style.color="blue"
+		element.style.backgroundColor="lightgreen"
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1" method="post">
+Enter name : <input type="text" name="fname" value="abc" onchange="Highlight(this)"/><br><br>
+Enter Mail : <input type="text" name="mail" value="pqr@tp.com" onchange="Highlight(this)"/><br><br>
+<input type="button" name="button" value="Click" onclick="Highlight(this)" /><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>TextRollOver</title>
+<script>
+window.status='Welcome to Javascript'
+function animals(m)
+{
+	if(m==0)
+	{
+		window.status='This is dogs area'
+	}
+	if(m==1)
+	{
+		window.status='This is cats area'
+	}
+}
+</script>
+</head>
+<body>
+</body>
+<table width="100%" border="0">
+<tbody>
+<tr valign="top">
+	<td width="50">
+	<img src="cat.jpg" height="92" width="72" border="0" name="animal">
+	</td>
+	<td>
+	<a onmouseover=animals(0)>
+	<b><u>Dog</u></b>
+	</a><br>
+	<a onmouseover=animals(1)>
+	<b><u>Cat</u></b>
+	</a>
+	</td>
+</table>
+</html>

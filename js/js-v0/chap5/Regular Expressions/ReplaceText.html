@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Replace in Regular Expression</title>
+<script language="javascript" type="text/javascript">
+function Replace()
+{
+	var text='Hi there I am Manavi '
+	alert('Current text is '+text);
+	var re=/\bManavi\b/g
+	if(re.test(text))
+	{
+	text=text.replace(re,'Shivani');
+	alert('New Text is '+text);
+	}
+	else
+	{
+		alert('Text Not Replaced..')
+	}
+}
+</script>
+</head>
+<body>
+<br><input type="button" name="button" value="Replace" onclick="Replace()">
+</body>
+</html>

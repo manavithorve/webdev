@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Radio Button</title>
+<script>
+function Change(eleVal)
+{
+	with(document.forms.f1)
+	{
+		if(eleVal=="Bikes")
+		{
+			optionlist[0].text="FZ"
+			optionlist[0].value="1"
+			optionlist[1].text="Pulsor"
+			optionlist[1].value="2"
+		}
+		if(eleVal=="Cars")
+		{
+			optionlist[0].text="BMW"
+			optionlist[0].value="1"
+			optionlist[1].text="Suzuki"
+			optionlist[1].value="2"
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1" method="post">
+<select name="optionlist" size="2">
+<option value="1">BMW
+<option value="2">Suzuki
+</select>
+<br><br>
+<input type="radio" name="radio" value="Cars" onclick="Change(this.value)"/>Cars
+<br><input type="radio" name="radio" value="Bikes" onclick="Change(this.value)"/>Bikes 
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<title>Changing Paragraph color automatically</title>
+<script language="javascript" type="text/javascript">
+function changeColor()
+{
+with(document.forms.colorPara)
+{
+document.getElementById("p1").style.color="aqua"
+document.getElementById("p1").style.background="black"
+}
+}
+function resetPara()
+{
+with(document.forms.colorPara)
+{
+document.getElementById("p1").style.color="red"
+document.getElementById("p1").style.background="white"
+}
+}
+</script>
+</head>
+<body>
+<form name="colorPara" method="post">
+<p id="p1" onmouseover="changeColor()" onmouseout="resetPara()">
+<--------Java Script----------><br>
+* Features *<br>
+Build dynamic Web Page<br>
+Display Alert Boxes<br>
+Identify the browsers<br>
+set date and time<br> 
+</p>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+set id to paragraph for editing the style

@@ -1,0 +1,23 @@
+﻿<html>
+<head></head>
+<title></title>
+<body>
+<script language="javascript" type="text/javascript">
+var first=0
+var second=1
+var third
+var num=prompt('Enter the number for Fibbonacci Series',' ')
+document.write('The Fibbonacci Series is :');
+document.write('<br>'+first)
+document.write('<br>'+second)
+for(var i=1;i<num-1;i++)
+{
+	third=first+second;
+	document.write('<br>'+third);
+	first=second;
+	second=third;
+}
+document.write('<br>---End---');
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+<title>String functions</title>
+<script language="javascript" type="text/javascript">
+var choice=0;
+do
+{
+alert('Enter your Choice for Operation')
+var ch=parseInt(prompt('1-String Reverse 2-String Concatination 3-String Palindrome 4-String Comparision 5-String Copy',' '))
+switch(ch)
+{
+case 1 :	var str=prompt('Enter a String',' ')
+	var str1=str.split('')
+	var str2=str1.reverse()
+	var str3=str2.join('')
+	alert('Reversed String is: '+str3)
+break;
+case 2 : 	var str=prompt('Enter String 1',' ')
+	var str1=prompt('Enter String 2',' ')
+	var str2=str+" "+str1
+	alert('Concatinated String is: '+str2)
+break;
+case 3 : 	var str=prompt('Enter a String',' ')
+	var str1=str.split('')
+	var str2=str1.reverse()
+	var str3=str2.join('')
+	if(str==str3)
+	{
+		alert('Palindrome')
+	}
+	else
+	{
+		alert('Not a Palindrome')
+	}
+break;
+case 4 : 	var str1=prompt('Enter a String1',' ')
+	var str2=prompt('Enter a String2',' ')
+	if(str1==str2)
+	{
+		alert('Same')
+	}
+	else
+	{
+		alert('Not Same')
+	}
+break;
+case 5 :	var str=prompt('Enter a String',' ')
+	var str1=str.split('')
+	var str2=str1.join('')
+	alert('Copied String is : '+str2)
+break;
+default : 	alert('Enter Valid Choice') 
+}
+choice=parseInt(prompt('To continue press 1',' '))
+}while(choice==1);
+</script>
+</head>
+</body>
+</html>

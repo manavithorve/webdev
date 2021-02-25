@@ -1,0 +1,7 @@
+You can access and change the value of elements of another child window by directly referencing the element from within your JavaScript. 
+
+You must explicitly specify the full path to the element in the JavaScript statement that references the element, and it must be from the same domain as the web page; otherwise, a security violation occurs. Let's see how this works. 
+
+Suppose that a button named WebPage1 is on Form1, located on the web page that is displayed in the bottomPage frame of the frameset. (This is similar to examples shown previously in this chapter, except in those examples we didn't name the form.) 
+
+The objective is to change the label of the Web Page 1 button. You'll need to specify the full path and then assign text to the value attribute of WebPage1, as shown here: parent.topPage.Form1.WebPage1.value='New Label'

@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>WebPage2</title>
+<script language="javascript" type="text/javascript">
+function ValidatefName()
+			{
+				with(document.forms.LoginForm)
+				{
+					var first=fname.value
+					re=/[0-9]/
+					if(re.test(first))
+					{
+						alert('Name should not contain numbers')
+					}
+				}
+			}
+			function ValidatelName(last)
+			{
+				with(document.forms.LoginForm)
+				{
+					re=/[0-9]/
+					if(re.test(last))
+					{
+						alert('Name should not contain numbers')
+					}
+				}
+			}
+			function validateMail(email)
+			{
+					with(document.forms.LoginForm)
+					{
+						var loc=email.indexOf('@')
+						if(loc==-1)
+						{
+							alert('You entered Wrong email')
+						}
+					}
+			}
+			function SayHello()
+			{
+				with(document.forms.LoginForm)
+				{
+					var x=fname.value;
+					var y=lname.value;
+					var z=mail.value;
+					if(x!="")
+					{
+						if(y!="")
+						{
+							if(z!="")
+							{
+								alert("Welcome");
+							}
+							else
+							{
+							alert("Email must be filled out");
+							}
+						}
+						else
+						{
+							alert("Last name must be filled out")
+						}
+					}	
+					else
+					{
+						alert("Name must be filled out");
+					}
+				}	
+			}
+	function change()
+		{
+				parent.webpage5.location.href='Webpage5.html'
+		}
+</script>
+</head>
+<body>
+<form name="LoginForm">
+First name: <input type="text" name="fname" onblur="ValidatefName()"/><br><br>
+Last name:  <input type="text" name="lname" onchange="ValidatelName(this.value)" /><br><br>
+Email ID: 	<input type="text" name="mail" onblur="validateMail(this.value)"/><br><br>
+<input type="submit" name="submit" value="Submit" onclick="SayHello()">&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="reset" value="Reset">&nbsp&nbsp&nbsp&nbsp
+<input type="button" name="WP2" value="Back" onclick="change()"/>
+</form>
+</body>
+</html> 

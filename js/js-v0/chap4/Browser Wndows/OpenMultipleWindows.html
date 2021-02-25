@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Open Window</title>
+<script>
+function OpenWindow()
+{
+	for(var i=0;i<5;i++)
+	{
+		MyWin=window.open('','MyAdwin'+i,'height=200,width=200')
+		MyWin.document.write("Welcome to new Window..."+(i+1))
+	}	
+}
+</script>
+</head>
+<body>
+<br><br>
+<input type="button" name="button" value="Open Windows" onclick="OpenWindow()"><br><br>
+</html>

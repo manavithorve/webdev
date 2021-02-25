@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Open Window</title>
+<script>
+function OpenWindow()
+{
+	var windowstatus
+	if(windowstatus!=1)
+	{
+		MyWin=window.open('','MyAdwin','height=500,width=500')
+		MyWin.document.write("Welcome to new Window...")
+		windowstatus=1
+	}
+	else
+	{
+		window.close()
+		windowstatus=0
+	}	
+}
+</script>
+</head>
+<body>
+<br><br>
+<input type="button" name="button" value="Open New Window" onclick="OpenWindow()"><br><br>
+</html>

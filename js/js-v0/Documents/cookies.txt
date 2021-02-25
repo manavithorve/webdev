@@ -1,0 +1,12 @@
+---A cookie is a small piece of information that a web site writes to your hard disk when you visit the site.
+--- A cookie is plain text that can be used for a variety of purposes, but it’s not intended to spy on you (though some web sites do track your visits to the site) and it de? nitely will not take over your computer.
+---A cookie is written to your hard disk by the browser when told to do so by a JavaScript.
+---Cookies come in two ?avors: 
+Session cookies and persistent cookies.
+
+-- A session cookie resides in memory for the length of the browser session. A browser session begins when the user starts the browser and ends when the user exits the browser. 
+Even if the user surfs to another web site, the cookie remains in memory. 
+However, the cookie is automatically deleted when the user exits the browser application.
+
+-- A persistent cookie is a cookie that is assigned an expiration date .
+A persistent cookie is written to the computer’s hard disk and remains there until the expiration date has been reached; then it’s deleted.  

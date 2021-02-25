@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Form Element and Objects </title>
+<script>
+function Display(element)
+{
+	with(document.forms.f1)
+	{
+		if(element==1)
+		{
+			alert("Button Value is : "+window.document.forms.f1.button1.value)
+		}
+		if(element==2)
+		{
+			alert("Button Value is : "+window.document.forms.f1.button2.value)
+		}	
+	}	
+}
+</script>
+</head>
+<body>
+<form name="f1" method="post" action="www.google.com">
+<input type="submit" name="button1" value="Submit" onclick="Display(1)"/>
+<input type="Reset" name="button2" value="Reset" onclick="Display(2)"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿<html>
+<head>
+<title>Demo</title>
+<script language="javascript" type="text/javascript">
+function adds()
+{
+with(document.forms.addition)
+{
+var n1=parseFloat(num1.value)
+var n2=parseFloat(num2.value)
+var ans=n1+n2
+add1.value=ans
+}
+}
+function div()
+{
+with(document.forms.division)
+{
+var n1=parseFloat(num1.value)
+var n2=parseFloat(num2.value)
+if(n2!=0)
+{
+var ans=n1/n2
+div1.value=ans
+}
+else
+{
+	alert('Divisor Can not be Zero')
+}
+}
+}
+function mul()
+{
+with(document.forms.multi)
+{
+var n1=parseFloat(num1.value)
+var n2=parseFloat(num2.value)
+var ans=n1*n2
+mul1.value=ans
+}
+}
+function sub()
+{
+with(document.forms.subs)
+{
+var n1=parseFloat(num1.value)
+var n2=parseFloat(num2.value)
+var ans=n1-n2
+sub1.value=ans
+}
+}
+</script>
+</head>
+<body>
+<h2><font face="Comic sans ms">Form1</font></h2><br>
+<form name="addition" method="post">
+<p>
+Num1<input type="text" name="num1"/><br>
+Num2<input type="text" name="num2"/><br>
+Addition<input type="text" name="add1"/><br>
+<input type="button" name="button" value="Add" onclick="adds()"/><br>
+</p>
+</form>
+------------------------------------------------------------------------------------------------------
+<h2><font face="Comic sans ms">Form2</font></h2><br>
+<form name="subs" method="post">
+<p>
+Num1<input type="text" name="num1"/><br>
+Num2<input type="text" name="num2"/><br>
+Subtraction<input type="text" name="sub1"/><br>
+<input type="button" name="button" value="Subtract" onclick="sub()"/><br>
+</p>
+</form>
+------------------------------------------------------------------------------------------------------
+<h2><font face="Comic sans ms">Form3</font></h2><br>
+<form name="multi" method="post">
+<p>
+Num1<input type="text" name="num1"/><br>
+Num2<input type="text" name="num2"/><br>
+Multiplication<input type="text" name="mul1"/><br>
+<input type="button" name="button" value="Multiply" onclick="mul()"/><br>
+</p>
+</form>
+-------------------------------------------------------------------------------------------------------
+<h2><font face="Comic sans ms">Form4</font></h2><br>
+<form name="division" method="post">
+<p>
+Num1<input type="text" name="num1"/><br>
+Num2<input type="text" name="num2"/><br>
+Division<input type="text" name="div1"/><br>
+<input type="button" name="button" value="Divide" onclick="div()"/><br>
+</p>
+</form>
+-------------------------------------------------------------------------------------------------------
+</body>
+</html>

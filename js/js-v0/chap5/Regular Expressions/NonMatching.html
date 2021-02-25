@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Searching Special Symbol By Hiding Meaning </title>
+<script language="javascript" type="text/javascript">
+function RegularExpression()
+{
+	var name='Bob--'
+	var re=/^[\-]/
+	if(re.test(name))
+	{
+		alert('Welcome')
+	}
+	else
+	{
+		alert('Illeagal Character - Found')
+	}
+}
+</script>
+</head>
+<body>
+<br><input type="button" name="button" value="Click" onclick="RegularExpression()" /><br>
+</body>
+</html>

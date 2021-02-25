@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Scroll Window</title>
+<script>
+function Scroll()
+{
+	mywin=window.open('','myadwin','height=200,width=200,scrollbars=1')
+	mywin.document.write("Hii")
+	mywin.scrollTo(30,40);	
+}
+</script>
+</head>
+<body>
+<br><br>
+<input type="button" name="button" value="Go to Top" onclick="Scroll()"><br><br>
+</html>

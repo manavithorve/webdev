@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>String Methods</title>
+<script>
+	var str="Manavi"
+	document.write("String is "+str);
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var n=prompt('Enter the position of character',' ')
+	document.write("Character at " +n+" is "+(str.charAt(n-1)))
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var i=prompt('Enter the character whose index has to find ','')
+	document.write('Index of character '+i+' is '+(str.indexOf(i)))
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var up=str.toUpperCase()
+	document.write('String in Upper Case is '+up)
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var low=str.toLowerCase()
+	document.write('String in Lower Case is '+low)
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var sub=str.substring(2,5)
+	document.write('Substring1 is '+sub)
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var sub1=str.substr(2,3)
+	document.write('Substring2  is  '+sub1)
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var tos=10
+	document.write('String format of number 10 is '+tos.toString())
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var pi="10"
+	document.write('Number format of String "10" is '+parseInt(pi))
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var len=str.length
+	document.write('String Length is '+len)
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var splt=str.split('a')
+	for(var i=0;i<splt.length;i++)
+	{
+		document.write(splt[i])
+	}
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+
+	var newarr=splt.join('a')
+	for(var i=0;i<newarr.length;i++)
+	{
+		document.write(newarr[i])
+	}
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var letter='m'
+	var charcode=letter.charCodeAt()
+	document.write("Character code of m is "+charcode)	
+	
+	document.write('<br>________________________________________________________________________________________<br>')
+	
+	var char=String.fromCharCode(111)
+	document.write("Character at code 111  is "+char)	
+</script>
+</head>
+</html>

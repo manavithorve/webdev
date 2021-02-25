@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+<title>Placing position</title>
+<script language="javascript" type="text/javascript">
+function openNewWindow(Ad)
+{
+	var win=window.open(Ad,"win", "height=250,width=250,left=0,top=0")	
+}
+</script>
+</head>
+<body>
+<form name="taku" >
+<p>
+<input name="proA" value="proA" type="button" onclick="openNewWindow('new.html')"/>
+<input name="proB" value="proB" type="button" onclick="openNewWindow('colorPara.html')"/>
+</form>
+</body>
+</html>

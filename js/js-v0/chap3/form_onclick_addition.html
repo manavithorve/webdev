@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+<title>form_onclick_addition3</title>
+<script language="javascript" type="text/javascript">
+function add1()
+{
+with(document.forms.Calculator)
+{
+a=parseFloat(n1.value)
+b=parseFloat(n2.value)
+var c=a+b
+v_add.value=c
+var d=a-b
+v_sub.value=d
+var e=a*b
+v_mul.value=e
+var f=a/b
+v_div.value=f
+}
+}
+</script>	
+</head>
+<body>
+<form method="post" name="Calculator"><p><center>
+form onclick addition3 without getId and answer in text box with 'with keyword'<br><br>
+first number <center><input type="text" name="n1"/>   <br></center>
+second number <center><input type="text" name="n2"/>   <br></center>
+Addition<center><input type="text" name="v_add"/><br></center>
+Subtraction<center><input type="text" name="v_sub"/><br></center>
+Multiplication <center><input type="text" name="v_mul"/><br></center>
+Division <center><input type="text" name="v_div"/><br></center>
+<input type="button" name="Process" value="Process" onClick="add1()"/><br>	
+</form>
+</body>
+</html>

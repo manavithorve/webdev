@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Calling Function</title>
+<script>
+function Prime()
+{
+	var count=0
+	var n=prompt('Enter a number to check whether it is prime or not','')
+	for(var i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		{
+			count++
+		}
+	}
+	if(count==2)
+	{
+		alert('Number is Prime')
+	}
+	else
+	{
+		alert('Number is not Prime')
+	}
+}
+</script>
+</head>
+<body>
+<script>
+Prime()
+</script>
+</body>
+</html>

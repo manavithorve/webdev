@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Window Focus</title>
+<script>
+function OpenWindow()
+{
+	MyWin=window.open('','MyAdwin','height=500,width=500')
+	MyWin.document.write("Welcome to new Window...")
+	this.focus();	
+}
+</script>
+</head>
+<body>
+<br><br>
+<input type="button" name="button" value="Open New Window" onclick="OpenWindow()"><br><br>
+</html>

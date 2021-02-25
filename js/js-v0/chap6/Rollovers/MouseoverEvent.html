@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Rollover 1</title>
+<script>
+cats = new Image
+dogs=new Image
+	if(document.Images)
+	{
+		cats.src="cat.jpg"
+		dogs.src="dog.jpg"
+	}
+	else
+	{
+		cats.src=""
+		dogs.src=""
+	}
+</script>
+</head>
+<body>
+	<table width="100%" border="0">
+		<tbody>
+			<tr valign="top">
+			<td width="50">
+				<a>
+				<img height="92" src="cat.jpg" width="70" border="0" onmouseover="src='dog.jpg'" onmouseout="src='cat.jpg'">
+				</a>
+				</td>
+				<td>
+				<img height="1" src="" width="10">
+				</td>
+				<td>
+				<a>
+				<b><u>Cat & Dog</u></b>
+				</a>
+				<font face="Comic Sans MS" size="-1">
+				<br>Domestic Animals</br>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table>
+</html>

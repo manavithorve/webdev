@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Replace like values in Regular Expression</title>
+<script language="javascript" type="text/javascript">
+function CheckMail(mail)
+{
+	var mail1=mail
+	var re=/[@]/
+	var r=/[\.]/
+	if(re.test(mail1))
+	{
+		if(r.test(mail1))
+		{
+			alert('Welcome')
+		}
+		else
+		{
+			alert('Mail should contain period..')
+		}
+	}
+	else
+	{
+		alert('Mail should contain "@" ')
+	}
+}
+function CheckNo()
+{
+	with(document.forms.f1)
+	{	
+		phNo=no.value
+		var re=/^[\(]?(\d{3})[\)]?[ -\.]?(\d{3})[ -\.]?(\d{4})$/
+		if(re.test(phNo))
+		{
+			MyArray=re.exec(phNo)
+			alert("Phone No is "+MyArray[1]+MyArray[2]+MyArray[3])
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<br>
+Email : <input type="text" name="email" onblur="CheckMail(this.value)"/>
+<br><br>Phone Number : <input type="text" name="no"/><br>
+<br><input type="button" name="button" value="validate" onclick="CheckNo()">
+</form>
+</body>
+</html>

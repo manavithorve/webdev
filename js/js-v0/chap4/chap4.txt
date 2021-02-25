@@ -1,0 +1,11 @@
+----Cookie Creating 
+----Reading
+----Setting the Expiration Date, Deleting 
+----Personalizing  and Experience Using a Cookie
+----Giving the New Window Focus 
+----Placing an Window into Position on the Screen 
+----Changing  the Contents of a Window  
+----Closing the Window 
+----“Magically” Scrolling a Web Page 
+----Opening Multiple Windows at Once 
+----Creating a Web Page in a New Window 

@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Array Declare</title>
+<script>
+arr=new Array('2','4','1','3','5')
+
+document.write("Length of Array is : "+arr.length)
+document.write("<br> Elements in Array Are :<br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+arr.sort()
+document.write("Sorted Array is : <br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+arr.reverse()
+document.write("Reversed Array is :<br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+var newarr=arr.slice(3,5)
+document.write("Elements in new Array are :<br>")
+for(var i=0;i<newarr.length;i++)
+{
+	document.write("Element : "+newarr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+var n=arr.shift()
+document.write("Element removed is "+n+"<br>")
+document.write("Now Array is : <br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+var pushed=arr.push('5')
+document.write("Element Pushed is "+pushed+"<br>")
+document.write("Now Array is : <br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+var poped=arr.pop()
+document.write("Element removed is "+poped+"<br>")
+document.write("Now Array is : <br>")
+for(var i=0;i<arr.length;i++)
+{
+	document.write("Element : "+arr[i]+"<br>")
+}
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+var array=new Array('M','A','N','A','V','I')
+document.write("Concatenation is "+array.concat()+"<br>");
+
+document.write('_______________________________________________________________________________________________________<br>')
+
+document.write("<br>Elements joined  "+array.join('')+"<br>");
+document.write('_______________________________________________________________________________________________________<br>')
+
+</script>
+</head>
+<body>
+</body>
+</html>

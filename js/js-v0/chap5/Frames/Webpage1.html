@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>WebPage1</title>
+<script language="javascript" type="text/javascript">
+function Hi()
+{
+	with(document.forms.LoginPage)
+	{
+		var fnm=fname.value
+		var ps=pass.value
+		if(fnm=="admin")
+		{
+			if(ps=="1234")
+			{
+				parent.webpage1.location.href='Webpage3.html'
+			}
+			else
+			{
+				alert("Wrong Password!")
+			}
+		}	
+		else
+		{
+			alert("Wrong username")
+		}
+	}
+}
+function changeFocus()
+{
+	parent.webpage5.location.href='Webpage2.html'
+}
+</script>
+</head>
+<body>
+<form name="LoginPage">
+<br>Enter User Name : <input type="text" name="fname" />
+<br><br>Enter Password : <input type="text" name="pass"/>
+<br><br><input type="button" name="WP1" value="Login" onclick="Hi()"/><br>
+
+<h5>Don't have Account ? </h5>
+
+<input type="button" value="Sign Up" name="signup" onclick="changeFocus()"/>
+</form>
+</body>
+</html>

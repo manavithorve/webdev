@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Suggest Mail</title>
+<script>
+function SetMail()
+{
+	with(document.forms.f1)
+	{	
+		if(fn.value.length>0 && ln.value.length)
+		{
+				var mail1=fn.value.charAt(0)+ln.value+"gmail.com"
+				var mail2=fn.value+ln.value+"gmail.com"
+				var mail3=ln.value.charAt(0)+ln.value+"gmail.com"
+				alert("Mail Suggestions to you are "+mail1+" "+mail2+" "+mail3)
+		}
+	}	
+}
+</script>
+</head>
+<body>
+<form name="f1" action="www.google.com">
+First name : <input type="text" name="fn" /><br><br>
+Last name : <input type="text" name="ln" /><br><br>
+Email : <input type="text" name="mail"/><br><br>
+<input type="button" name="mailsuggestion" value="Suggest Me a Mail" onclick="SetMail()"/><br>
+<input type="submit" name="submit" name="Submit"/> 
+</form>
+</body>
+</html>

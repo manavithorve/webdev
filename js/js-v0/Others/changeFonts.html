@@ -1,0 +1,23 @@
+<html>
+<title>Change Font</title>
+<head>
+<script language="javascript" type="text/javascript">
+function taku()
+{
+with(document.forms.fonts)
+{
+document.getElementById("f1").style.color="aqua"
+document.getElementById("f1").style.background="black"
+document.getElementById("f1").style.fontStyle="italic"
+}
+}
+</script>
+<body>
+<form name="fonts" method="post">
+<font id="f1" face="comic sans ms" color="Red">
+Hii I love Takudi............!
+<input type="button" name="button" value="Click Here" onclick="taku()"/>
+</font>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Link Banner</title>
+<script>
+	Banner= new Array('cat.jpg','dog.jpg','cartoon.jpg')
+	Link=new Array('google.com','gmail.com','facebook.com')
+	currentBanner=0;
+	function LinkBanner()
+	{
+		document.location.href='https:\\www.'+Link[currentBanner]
+	}
+	function DisplayBanner()
+	{
+		if(document.images)
+		{
+			currentBanner++
+			if(currentBanner==Banner.length)
+			{
+				currentBanner=0			
+			}
+			document.RotateBanner.src=Banner[currentBanner]
+			setTimeout("DisplayBanner()",1000)
+		}
+	}
+</script>
+</head>
+<body onload="DisplayBanner()">
+<center>
+<a href="javascript:LinkBanner()"> 
+<img src='cat.jpg' height="500" width="500" name="RotateBanner" /></a>
+</center>
+</body> 
+</html>

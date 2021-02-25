@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Search Word</title>
+<script language="javascript" type="text/javascript">
+function RegularExpression()
+{
+	var name='Hello Mary, Bob Welcome'
+	var re=/\bBob\b/g
+	if(re.test(name))
+	{
+		alert('Name Found')
+	}
+	else
+	{
+		alert('Name Not Found')
+	}
+}
+</script>
+</head>
+<body>
+<br><input type="button" name="button" value="Click" onclick="RegularExpression()" /><br>
+</body>
+</html>

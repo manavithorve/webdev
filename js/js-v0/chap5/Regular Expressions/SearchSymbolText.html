@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Matching Digits and NonDigits</title>
+<script language="javascript" type="text/javascript">
+function SearchText()
+{
+	with(document.forms.form1)
+	{
+	
+		var num=pass.value
+		var re=/\W/
+		if(re.test(num))
+		{
+			alert('Password contains special Symbols')
+		}
+		else
+		{
+			alert('Password contains letter ,number or underscore ')
+		}
+	}
+}
+function SearchSymbol(namev)
+{
+	var name=namev
+	var re=/\w/
+	if(re.test(name))
+	{
+		alert('This determines whether the text contains letters , numbers or underscore , if yes it returns true ')
+	}
+	else
+	{
+		alert('Returns false if special symbols rather than letter , number and underscore..')
+	}
+}
+</script>
+</head>
+<body>
+<br>
+<form name="form1">
+First Name  <input type="text" name="fname" onblur="SearchSymbol(this.value)"/>
+Password <input type="text" name="pass"/><br>
+<input type="button" name="button" value="Click" onclick="SearchText()"><br>
+</form>
+</body>
+</html>

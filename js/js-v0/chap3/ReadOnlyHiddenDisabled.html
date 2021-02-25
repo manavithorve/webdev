@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Disable ReadOnly Hidden</title>
+<script>
+function ManipulateElement(no)
+{
+	with(document.forms.f1)
+	{
+		if(no.charAt(3)=='6')
+		{
+			dep.value="Computer Department"	
+		}
+		else if(no.charAt(3)=='7')
+		{
+			dep.value="Civil Department"
+		}
+		else
+		{
+			alert('Invalid ID')
+		}
+	}
+}
+function SetMail()
+{
+	with(document.forms.f1)
+	{
+		mail.value=fname.value+lname.value.charAt(0)+"@gppune.ac.in"
+		alert("Your Mail is "+mail.value)
+	}
+}
+function ViewShift(dept)
+{
+	with(document.forms.f1)
+	{
+		if(dept=="Computer Department")
+		{
+			shift.disabled=false
+			shift.value="1"
+		}
+		if(dept=="Civil Department")
+		{
+			shift.disabled=false
+			shift.value="2"
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+First Name <input name="fname" type="text" /><br><br>
+Last Name <input name="lname" type="text" onblur="SetMail()"/><br><br>
+Email <input name="mail" type="hidden"/><br><br>
+Enrolment No <input type="text" name="eno" onchange=ManipulateElement(this.value)>
+Department <input type="text" name="dep" readonly="true" value="10" onblur="ViewShift(this.value)"/>
+Shift <input type="text" name="shift" disabled="true"/>
+</form>
+</body>
+</html>

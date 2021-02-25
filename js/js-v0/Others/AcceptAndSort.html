@@ -1,0 +1,24 @@
+﻿<html>
+<title>Accept And Sort</title>
+<body>
+<script language="javascript" type="text/javascript">
+var arr=new Array();
+for(var i=0;i<10;i++)
+{
+	arr[i]=prompt('Enter a number',' ')
+}
+document.write('<br>Numbers in Ascending order')
+arr.sort()
+for(var i=0;i<arr.length;i++)
+{
+	document.write('<br>'+arr[i])
+}
+document.write('<br>Numbers in Descending order')
+arr.reverse()
+for(var i=0;i<arr.length;i++)
+{
+	document.write('<br>'+ arr[i])
+}
+</script>
+</body>
+</html>

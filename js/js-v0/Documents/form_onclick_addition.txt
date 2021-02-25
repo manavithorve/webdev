@@ -1,0 +1,51 @@
+﻿<html>
+
+	<head>
+
+		<title>form_onclick_addition3</title>
+
+		<script language="javascript" type="text/javascript">
+
+			function add1()
+
+			{
+
+				with(document.forms.Addition)
+
+				{
+
+					a=parseInt(n1.value)
+
+					b=parseInt(n2.value)
+
+					c=a+b
+
+					v_add.value=c
+
+				}
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<form method="post" name="Addition"><p><center>
+
+					form onclick addition3 without getId and answer in text box with 'with keyword'<br><br>
+
+			first number  <center><input type="text" name="n1"/>   <br></center>
+
+			second number <center><input type="text" name="n2"/>   <br></center>
+
+			Addition        <center><input type="text" name="v_add"/><br></center>
+
+			<input type="button" name="Add" value="Add" onClick="add1()"/><br>	
+
+		</form>
+
+</body>
+
+</html>

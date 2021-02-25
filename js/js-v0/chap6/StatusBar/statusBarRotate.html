@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+<title>Status Bars</title>
+<script>
+var msg='Department of computer Engineeing'
+var count=0
+function RotateStatus()
+{
+	window.status=msg.substring(count,msg.length)+msg.substring(0,count)
+	if(count<msg.length)
+		count++
+
+	else
+		count=0
+		setTimeout('RotateStatus()',200);	
+}
+</script>
+</head>
+<body onload="RotateStatus()">
+<p>Watch the status bar rotating!!!</p>
+</body>
+</html>

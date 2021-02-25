@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Check Box</title>
+<script language="javascript" type="text/javascript">
+function ShowChecked()
+{
+	with(document.forms.f1)
+	{
+		var selected=" "
+		if(dog.checked==true)
+		{
+			selected=selected+" Dog"
+		}
+		if(cat.checked==true)
+		{
+			selected=selected+" Cat"
+		}
+		if(cow.checked==true)
+		{
+			selected=selected+" Cow"
+		}
+		if(monkey.checked==true)
+		{
+			selected=selected+" Monkey"
+		}
+		alert("You Selected"+selected)
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1" method="post">
+<p>
+<input type="checkbox" name="dog">Dog<br>
+<input type="checkbox" name="cat">Cat<br>
+<input type="checkbox" name="cow">Cow<br>
+<input type="checkbox" name="monkey">Monkey<br>
+<input type="button" value="Display Selected" name="button" onclick="ShowChecked()"/>
+</p>
+</form>
+</body>
+</html>

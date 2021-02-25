@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Replace like values in Regular Expression</title>
+<script language="javascript" type="text/javascript">
+function Replace()
+{
+	text=' Hi Bob Welcome Bobby to our Website'
+	alert('Current text is '+text);
+	var re=/\b Bob(by)?\b/g
+	text=text.replace(re,' Robert ');
+	alert('New Text is  '+text);
+}	
+</script>
+</head>
+<body>
+<br><input type="button" name="button" value="Replace" onclick="Replace()">
+</body>
+</html>
