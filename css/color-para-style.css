@@ -1,0 +1,19 @@
+p{
+    color : orange;
+    font-family: sans-serif;
+}
+h2{
+    color : green;
+}
+
+/*Class can be repeated*/
+.para{
+  color : blue;
+  font-weight: bold;
+}
+
+/*ID cannot be repeated!*/
+#para{
+  color : green;
+  font-style: italic;
+}

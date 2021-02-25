@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 align="center">Login</h1>
+    <form action="welcome.html">
+      <table cellspacing="5" cellpadding="5" align="center" border="0">
+
+        <!--Name-->
+        <tr>
+          <td>
+            <label for="name">Name: </label>
+          </td>
+          <td>
+            <input type="text" name="name" placeholder="Your name here" size="50"/>
+          </td>
+        </tr>
+
+        <!--Email-->
+        <tr>
+          <td>
+            <label for="email">Email: </label>
+          </td>
+          <td>
+            <input type="text" name="email" placeholder="Your email here" size="50"/>
+          </td>
+        </tr>
+
+        <!--Is Member-->
+        <tr>
+          <td>
+            <label for="ismember">Are you a "Social.ly Club" member?</label>
+          </td>
+          <td>
+            <input type="radio" name="ismember" value="Yes"/> Yes
+            <input type="radio" name="ismember" value="No"/> No
+          </td>
+        </tr>
+
+        <!--BirthDate-->
+        <tr>
+          <td>
+            <label for="birthdate">Birth Date: </label>
+          </td>
+          <td>
+            <input type="date" name="birthdate"/>
+            <input type="hidden" name="age" value=""/>
+          </td>
+        </tr>
+
+        <!--City-->
+        <tr>
+          <td>
+            <label for="city">City</label>
+          </td>
+          <td>
+          <select name="city">
+          <option value="None" selected>None</option>
+          <option value="Pune">Pune</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Hydrabad">Hydrabad</option>
+          <option value="Ahemdabad">Ahemdabad</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Nagpur">Nagpur</option>
+          </select>
+          </td>
+        </tr>
+
+        <!--Site Source-->
+        <tr>
+          <td>
+            <label for="siteSource">How did you reach here?</label>
+          </td>
+          <td>
+            <select name="siteSource" size="3">
+              <option value="Web search">Web search</option>
+              <option value="Linked In">Linked In</option>
+              <option value="FaceBook">FaceBook</option>
+              <option value="From a friend">From a friend"</option>
+              <option value="From Institute Notices">From Institute Notices</option>
+            </select>
+          </td>
+        </tr>
+
+      <!--Other Clubs-->
+      <tr>
+        <td>
+          <label for="otherclubs">Are you member of any of the following clubs?</label>
+        </td>
+        <td>
+          <input type="checkbox" name="rescue_animals" value="Rescue Animals"/>
+          <label for="rescue_animals">Rescue Animals</label><br>
+          <input type="checkbox" name="old_age_home" value="Old Age Home"/>
+          <label for="old_age_home">Old Age Home</label><br>
+          <input type="checkbox" name="orphanage" value="Orphanage"/>
+          <label for="orphanage">Orphanage</label>
+        </td>
+      </tr>
+
+      <!--ID Proof-->
+      <tr>
+        <td>
+          <label for="workProof">If you are a member of Social.ly Club,<br>
+          upload your ID Card here </label>
+        </td>
+        <td>
+          <input type="file" name="socially_id_card"/>
+        </td>
+      </tr>
+
+      <!--Motivation-->
+      <tr>
+        <td>
+          <label for="motivation">What Motivated you to join this club?</label>
+        </td>
+        <td>
+          <textarea name="motivation" rows="8" cols="40"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center"><input type="reset" name="reset" value="Reset">
+        <input type="submit" name="submit" value="Submit"/></td>
+      </tr>
+      </table>
+
+    </form>
+  </body>
+</html>

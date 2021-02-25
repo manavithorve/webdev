@@ -1,0 +1,10 @@
+h1{
+	color:pink;
+	font-family: monospace;
+}
+p{
+	background-color: white;
+	padding: 30px;
+	margin: 10px;
+	color: teal;
+}

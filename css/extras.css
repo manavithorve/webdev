@@ -1,0 +1,25 @@
+#container{
+    padding: 10px;
+    margin: auto;
+    border: 1px solid brown;
+    width : 50%;
+    background: cornsilk;
+    letter-spacing: 5px;
+    text-align:center;
+}
+
+.paracount{
+    text-align: center;
+    text-decoration: overline underline blink;
+    padding : 10px;
+    margin: 10px;
+    text-indent: 50px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:visited{color:darkmagenta;}
+a:hover{color:darkorange;}
