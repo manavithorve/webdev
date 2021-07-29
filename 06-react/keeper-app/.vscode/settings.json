@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "'.','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "diffEditor.wordWrap": "on",
+    "editor.smoothScrolling": true,
+    "editor.accessibilityPageSize": 12,
+    "editor.codeLensFontFamily": "'.'",
+    "terminal.integrated.fontFamily": "'Menlo'"
+}
